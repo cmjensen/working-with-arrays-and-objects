@@ -55,8 +55,7 @@ function greeting( obj ) {
 
 const totalPopulation = obj => {
   const {utah, california, texas, arizona} = obj;
-  total = utah + california + texas + arizona
-  return total
+  return utah + california + texas + arizona
 }
 
 
@@ -94,8 +93,8 @@ const ingredients = obj => {
   Find the smallest number of the three and return that number.
 */
 
-const largeNumbers = destObj => {
-  return Math.min(...destObj)
+const largeNumbers = (obj) => {
+  return Math.min(obj.first, obj.second, obj.third)
 }
 
 
@@ -107,9 +106,15 @@ const largeNumbers = destObj => {
   The object properties will be named a, b, and c and their values will be arrays of numbers.
   Find the longest array and return that array.
 */
-
-const numberGroups = destObj => {
-  
-}
+const numberGroups = obj => {
+  largest = obj.a 
+  if(obj.b.length > largest.length) {
+    largest = obj.b 
+    }
+  if(obj.c.length > largest.length) {
+    largest = obj.c
+    }
+  return largest
+  }
 
 

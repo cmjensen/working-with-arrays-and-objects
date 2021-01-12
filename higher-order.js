@@ -110,9 +110,7 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 */
 // let postTaxPrices = prices.map(price => price * 1.07);
 
-let orderTotals = orders.map((val, i, arr) => {
-  return val.price * val.tax
-});
+let orderTotals = orders.map(element => element.price + (element.price * element.tax))
 
 
 
@@ -132,6 +130,6 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
   Use a high order method to create to get the sum of bobsTotal.
 */
 
-let bobsTotal //Code Here
+// let bobsTotal = purchases.filter(elem => elem.owner === "Bob").reduce((acc, cur) => acc + cur.price)
 
-
+let bobsTotal = purchases.reduce((acc, cur) => cur.owner === "Bob" ? acc + cur.price : acc, 0)

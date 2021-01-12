@@ -41,7 +41,7 @@ for(var key in values) {
 
 function showValues( values ) {
   newStr = ''
-  for (const key in values) {
+  for (let key in values) {
     newStr += values[key]
   }
   return newStr
@@ -78,7 +78,7 @@ const greaterThan10 = obj => {
 
 const double = obj => {
   for(let key in obj) {
-    obj[key] = obj[key] * 2
+    obj[key] *= 2
   }
   return obj
 }

@@ -50,7 +50,11 @@ var employees = [
     3. Return the updated employee array.
 */
 
-//Code Here
+const employeeUpdater = () => {
+  employees.forEach((elem, i, arr) {
+
+  })
+}
 
 
 
@@ -97,8 +101,9 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+const grumpyActivity = cat.catFriends[0].activities[1];
+console.log('grumpy activity: ', grumpyActivity)
+const fluffy2ndFriend = cat.catFriends[1].name;
 
 
 
@@ -138,7 +143,13 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-//Code Here
+const recordCleaner = () => {
+  myCar.accidents.forEach((element, index, array) => {
+    if(element.atFaultForAccident === true) {
+      array[index].atFaultForAccident === false
+    }
+  });
+}
 
 
 
