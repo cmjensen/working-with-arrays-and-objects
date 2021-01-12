@@ -101,9 +101,9 @@ var cat = {
 */
 
 //Code Here
-// const grumpyActivity = cat.catFriends[0].activities[1];
-// console.log('grumpy activity: ', grumpyActivity)
-// const fluffy2ndFriend = cat.catFriends[1].name;
+const grumpyActivity = cat.catFriends[0].activities[1];
+console.log('grumpy activity: ', grumpyActivity)
+const fluffy2ndFriend = cat.catFriends[1].name;
 
 
 
@@ -143,13 +143,13 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 
-// const recordCleaner = () => {
-//   myCar.accidents.forEach((element, index, array) => {
-//     if(element.atFaultForAccident === true) {
-//       array[index].atFaultForAccident === false
-//     }
-//   });
-// }
+const recordCleaner = () => {
+  myCar.accidents.forEach((element, index, array) => {
+    if(element.atFaultForAccident === true) {
+      array[index].atFaultForAccident === false
+    }
+  });
+}
 
 
 
